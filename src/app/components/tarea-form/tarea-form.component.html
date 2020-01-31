@@ -1,0 +1,23 @@
+<div class="col-md-4 offset-md-4">
+    <div class="card">
+        <div class="card-body">
+            <form [formGroup]="tareaForm" (ngSubmit)="saveNewTarea()">
+                <div class="form-group">
+                    <input type="text" name="nombre" formControlName="nombre" placeholder="Nombre" class="form-control" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="cargo" formControlName="cargo" placeholder="Cargo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <textarea name="descripcion" formControlName="descripcion" placeholder="Descripcion" rows="2" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="imagen" formControlName="imagen" placeholder="Imagen" class="form-control" >
+                </div>
+                <button type="submit" class="btn btn-success btn-block">
+                    Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
