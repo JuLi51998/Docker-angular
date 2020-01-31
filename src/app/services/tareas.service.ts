@@ -8,7 +8,7 @@ import { Tarea } from "../models/tarea";
 export class TareasService {
 
   API_URI = 'http://localhost:3000'
-  API_PRODUCCION = '192.168.39.141:'
+  API_PRODUCCION = '192.168.39.141:4040'
   constructor(private http: HttpClient) { }
 
   getTareas() {
